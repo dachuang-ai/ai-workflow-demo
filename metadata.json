@@ -1,0 +1,6 @@
+{
+  "name": "達創智能科技 AI - 智能工作流",
+  "description": "達創協助企業重新設計工作流程，透過 AI、自動化工具與系統串接，建立可執行、可追蹤、可放大的智能工作流。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

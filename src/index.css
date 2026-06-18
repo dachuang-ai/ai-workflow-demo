@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-orange: #F28C52;
+  --color-brand-gold: #FFB36B;
+  --color-brand-ivory: #FFF8F2;
+  --color-brand-warm-white: #FDFBF8;
+  --color-brand-gray-light: #F3F0EB;
+  --color-brand-text-dark: #2E2A26;
+  --color-brand-text-muted: #6F675F;
+}
+
+@layer base {
+  body {
+    background-color: #FDFBF8;
+    color: #2E2A26;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Elegant keyframe sweep animation for dynamic orange buttons */
+@keyframes sweep {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+/* Custom flow engine line energy animations in warm colors */
+@keyframes flow-horizontal {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.flow-connector-line {
+  stroke-dasharray: 8, 4;
+  animation: flow-horizontal 1.2s linear infinite;
+}
+
+/* Premium glassmorphism and shadow layers for Luxury SaaS style */
+.glass-premium {
+  background: rgba(255, 248, 242, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(242, 140, 82, 0.12);
+}
+
+.glow-orange-soft {
+  box-shadow: 0 10px 30px -10px rgba(242, 140, 82, 0.15), 0 1px 3px rgba(242, 140, 82, 0.05);
+}
+
+.glow-orange-hover {
+  box-shadow: 0 20px 40px -15px rgba(242, 140, 82, 0.25), 0 0 20px rgba(242, 140, 82, 0.08);
+}
+
+.glow-btn-3d {
+  box-shadow: 0 4px 14px 0 rgba(242, 140, 82, 0.35), inset 0 -2px 0 0 rgba(0, 0, 0, 0.15), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.glow-btn-3d-hover {
+  box-shadow: 0 6px 20px 0 rgba(242, 140, 82, 0.5), inset 0 -2px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Hide standard cursor if target selector active */
+.custom-cursor-active {
+  cursor: none !important;
+}
+
+/* Scrollbar tweaks matching Ivory theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6DFD5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D5CEBF;
+}
